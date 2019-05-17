@@ -1,13 +1,7 @@
 Battle Challenge
 ==================
 
-This program emulates a takeaway delivery service. This challenge enabled me to implement my debugging and TDD skills while using Rspec tests.
 
-I approached this challennge in the following way:
-
-1. Wrote out the Rspec test that showed what I was aiming for as per the user stories.
-2. Ran Rspec and used the error messages to write out the source-code.
-3. Repeated this process until I had a fully functional passing test.
 
 How to Use:
 -----
@@ -22,24 +16,45 @@ rackup -p 4567
   http://localhost:4567
 ```
 
-
 User Stories:
 -----
 
 ```
-As a customer
-So that I can check if I want to order something
-I would like to see a list of dishes with prices
+As two Players,
+So we can play a personalised game of Battle,
+We want to Start a fight by entering our Names and seeing them
 
-As a customer
-So that I can order the meal I want
-I would like to be able to select some number of several available dishes
+As Player 1,
+So I can see how close I am to winning
+I want to see Player 2's Hit Points
 
-As a customer
-So that I can verify that my order is correct
-I would like to check that the total I have been given matches the sum of the various dishes in my order
+As Player 1,
+So I can win a game of Battle,
+I want to attack Player 2, and I want to get a confirmation
 
-As a customer
-So that I am reassured that my order will be delivered on time
-I would like to receive a text such as "Thank you! Your order was placed and will be delivered before 18:52" after I have ordered
+As Player 1,
+So I can start to win a game of Battle,
+I want my attack to reduce Player 2's HP by 10
+
+As two Players,
+So we can continue our game of Battle,
+We want to switch turns
+
+As Player 1,
+So I can see how close I am to losing,
+I want to see my own hit points
+
+As Player 1,
+So I can lose a game of Battle,
+I want Player 2 to attack me, and I want to get a confirmation
+
+As Player 1,
+So I can start to lose a game of Battle,
+I want Player 2's attack to reduce my HP by 10
+
+As a Player,
+So I can Lose a game of Battle,
+I want to see a 'Lose' message if I reach 0HP first
 ```
+
+
